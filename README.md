@@ -1,5 +1,5 @@
 # Made for my research class.
-Should just count algae on a hemocytometer. Do whatever the hell you want with it.
+Should just count algae on a hemocytometer. Do whatever the hell you want with it. Needs OpenCV, Keras and numpy.
 
 To-do:
 - actually get images
