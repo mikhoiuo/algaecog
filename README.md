@@ -1,5 +1,5 @@
 # Made for my research class.
-Should just count algae on a hemocytometer.
+Should just count algae on a hemocytometer. Do whatever the hell you want with it.
 
 To-do:
 - actually get images
