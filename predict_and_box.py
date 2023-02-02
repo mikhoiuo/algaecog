@@ -2,13 +2,13 @@
 
 import cv2
 import numpy as np
-from classify import predict
+from classify import predict_algae
 
 def predict_and_box(model, image_path):
     image = cv2.imread(image_path)
     image = cv2.resize(image, (256, 256))
 
-    boxes = predict(model, image)
+    boxes = predict_algae(model, image)
 
     # draw the bounding boxes on the image (want to make sure it WORKS)
     for box in boxes:
