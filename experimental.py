@@ -10,17 +10,13 @@ app = Flask(__name__)
 @app.route('/predict', methods=['POST'])
 def predict():
     
-    # Get the image data from the request
     image_data = request.get_data()
-
-    # Load the image data into a Pillow Image object
     image = Image.open(io.BytesIO(image_data))
 
-    # Check if the image is in a supported format (JPG or PNG)
     if image.format not in ['JPEG', 'PNG']:
         return jsonify({'success': False, 'error': 'Unsupported image format'})
 
-    # Convert the image to PNG if it's in JPG format
+    # jpg -> png
     if image.format == 'JPEG':
         image = image.convert('RGB')
         image.save('image.png', 'PNG')
