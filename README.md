@@ -5,6 +5,7 @@ To-do:
 - actually get images
 - train
 - work
+- eval.py
 - organize + add notes to code
 - web implementation xoxo
 - maybe make it count calculate concentration but i kind of rlly dont want to do that
